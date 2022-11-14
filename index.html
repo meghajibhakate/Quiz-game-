@@ -11,18 +11,53 @@
 
 <body>
     <h1>Welcome To This game</h1>
-    <div class="container">
+    <div id="container" style.display="flex">
         <div id="box1">
             <h2>Enter your Name</h2>
             <div>
-            <input type="text" id="myInput" placeholder="Enter Name...">
-            <button class="addBtn" id="addToDo" onclick="inputHide()">Add</button>
+                <input type="text" id="myInput" placeholder="Enter Name...">
+                <button class="addBtn" id="addToDo" onclick="inputHide()">Add</button>
+            </div>
 
         </div>
+    </div>
+    <div id="main-div"  >
+
+        <div class="container">
+            <h3 id="welcome-name"></h3>
+            <div id="box2">
+                <h4 class="question"> shjdgsdfgydsfsdfdfds</h4>
+
+            </div>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1">
+                    <label for="ans1" id="option1">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="ans1">
+                    <label for="ans1" id="option2">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="ans1">
+                    <label for="ans1" id="option3">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="ans1">
+                    <label for="ans1" id="option4">Answer</label>
+                </li>
+
+            </ul>
+
+            <button>Submit</button>
+
         </div>
     </div>
 
 </body>
-<!-- <script src="index.js"></script> -->
+<script src="index.js"></script>
 
 </html>
