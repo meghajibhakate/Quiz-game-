@@ -1,46 +1,91 @@
 
-function inputHide() {
+/**
+ * @desc Toggle dropdown menu
+ */
+function eventsClick(){
+    var events=document.getElementById("drop-events")
 
-   document.getElementById("container").style.display = 'none'
-   document.getElementById("main-div").style.display = "flex"
-   let inputField = document.getElementById("myInput");
-   var welcomeName = document.getElementById("welcome-name")
-   welcomeName.innerHTML ="Welcome"+" "+ inputField.value
-   console.log(welcomeName)
+    if (events.style.display == "none") {
+        events.style.display = "flex";
+    } else {
+        events.style.display = "none";
+    } 
+}
+
+
+/**
+ * @desc Toggle dropdown menu
+ */
+function aboutClick(){
+    var about=document.getElementById("drop-about")
+
+    if (about.style.display == "none") {
+        about.style.display = "flex";
+    } else {
+        about.style.display = "none";
+    } 
+}
+
+
+
+// Functions for Responsive Screen
+
+/**
+ * @desc Toggle hamburger menu
+ */
+function myFunction() {
+     // check drop style display is none
+     var hamburger=document.getElementById("drop")
+    if (hamburger.style.display == "none") {    //dropdown display none
+        hamburger.style.display = "flex";       //dropdown display flex 
+    }   
+    else {
+        hamburger.style.display = "none";
+    }
+}
+
+
+// create anFunction for Responsive Screen 
+/**
+ * @desc Toggle dropdown menu
+ */
+function eventClick(){
+    var event=document.getElementById("drop-newevent")
+    if (event.style.display == "none") {
+        event.style.display = "flex";
+    } else {
+        event.style.display = "none";
+    } 
+}
+
+
+
+ /**
+ * @desc Toggle dropdown menu
+ */
+function newaboutClick(){
+    var newabout=document.getElementById("drop-newabout")
+    if (newabout.style.display == "none") {
+        newabout.style.display = "flex";
+    } else {
+        newabout.style.display = "none";
+    } 
 }
 
 
 
 
-const quiz = [
-   {
-      question: "@@@@@@@@@@@@@@@@@@what is the name?",
-      a: "A",
-      b: "B",
-      c: "C",
-      d: "D",
-      ans: "A"
 
-   },
-   {
-      question: "numbers?",
-      a: "1",
-      b: "2",
-      c: "3",
-      d: "4",
-      ans: "C"
 
-   }
-]
 
-const question = document.querySelector('.question');
-const option1 = document.querySelector('#option1');
-const option2 = document.querySelector('#option2');
-const option3 = document.querySelector('#option3');
-const option4 = document.querySelector('#option4');
 
-const loadQuestions = () => {
-   console.log(quiz[0])
-   question.innerHTML = quiz[0].question
-}
-loadQuestions()
+
+// /**
+//  * @param {number} index - index of tasklist
+//  * description: 
+//  * @return {number} incrementing index
+//  */
+// function btnClick(index){
+//     console.log(index)
+//     return index++
+// }

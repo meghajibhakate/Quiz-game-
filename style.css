@@ -1,3 +1,4 @@
+/* Style for evry elements */
 * {
   padding: 0;
   margin: 0%;
@@ -5,64 +6,695 @@
 }
 
 body {
-  background-color: rgb(127, 217, 255);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
 }
 
 
-#container {
+/* NavBar css start*/
+header {
+  width: 100%;
+  display: flex;
+  background-color: #1a1a1a;
+}
+
+
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  padding-left: 199px;
+  padding-top: 52px;
+}
+
+/* foss united logo img  */
+.img1 {
+  width: 190px;
+  height: 112px;
+  padding-left: 89px;
+  padding-top: 37px;
+}
+
+
+
+#navbar a {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 17px;
+  color: white;
+  font-weight: 400;
+}
+
+
+li {
+  list-style: none;
+  padding-bottom: 12px;
+}
+
+#navbar a:hover {
+  color: #08b74f;
+}
+
+
+#navbar .grants a {
+  color: #08b74f;
+}
+/* NavBar css end*/
+
+/* .box2 */
+.box2 {
+  display: flex;
+  background-color: #1a1a1a;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+
+.heading {
+  padding-bottom: 20px;
+  color: aliceblue;
+  padding-left: 112px;
+  padding-top: 256px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 67px;
+  row-gap: 25px;
+
 }
 
-#box1 {
-  background: blanchedalmond;
-  padding: 24px 100px;
-  border: 2px solid black;
-  width: 50%;
+.head {
+  line-height: 1;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1.40rem;
+  font-weight: 400;
+
 }
 
-h1,
-h2 {
-  padding-top: 10px;
-  padding-bottom: 20px;
+.btn {
+  width: 200px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 19px;
+  text-decoration: none;
+  background-color: #08b74f;
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Big heart image */
+.img2 {
+  width: 418px;
+  padding-top: 133px;
+}
+
+.head-2 {
+  padding-left: 164px;
+}
+
+
+/* Main body css  start*/
+.container2 {
+  padding: 140px 300px 50px 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#how-it-works {
+  font-size: 2rem;
+  color: #212121;
+  font-weight: 600;
+}
+
+p {
+  line-height: 2;
+  margin-bottom: 16px;
+  color: #616161;
+  font-size: 1.10rem;
+  color: #616161;
+  font-weight: 400;
+
+}
+
+#eligibility {
+  font-size: 2rem;
+  ;
+  color: #212121;
+  font-weight: 600;
+  padding-top: 3.50rem;
+}
+
+#hackathon {
+  color: #08b74f;
+  text-decoration: none;
+}
+
+#hackathon:hover {
+  text-decoration: underline;
+}
+
+
+
+/* recent-grants */
+.container3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+
+#recent-grants {
+  font-size: 2.25rem;
+  color: #212121;
+  font-weight: 600;
+
+}
+
+.ptag {
+  line-height: 1;
+}
+
+.recent-countainer1 {
+  display: flex;
+  gap: 123px;
+  width: 100%;
+
+}
+
+
+
+.recent-main-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+}
+
+#year-div {
+  display: flex;
+  gap: 80px;
+}
+
+
+.mt-0 {
+  font-size: 1.50rem;
+  color: #212121;
+}
+
+.recent-h3 {
+  color: #616161;
+  font-size: 1.10rem;
+  margin-bottom: 10px;
+}
+
+.mt-3 {
+  color: #08b74f;
+  text-decoration: none;
+}
+
+.mt-3:hover {
+  color: #08b74f;
+  text-decoration: underline;
+}
+
+#mt-p {
+  padding-right: 107px;
+}
+
+hr {
+  height: 1px;
+  color: #616161;
+}
+
+
+
+
+/* Apply for funding */
+.container4 {
+  display: flex;
+  flex-direction: column;
+  padding: 180px;
   text-align: center;
 }
 
-#myInput {
-  font-size: 18px;
-  width: 79%;
-  border-radius: 4px;
-  padding: 5px;
-
-}
-
-.addBtn {
-  background-color: rgb(3, 64, 117);
-  font-size: 17px;
-  padding: 7px;
-  color: white;
-  border-radius: 5px;
-  border: none;
-}
-
-#main-div {
-  display: none;
-  justify-content: center;
-}
-
-
-.container {
+.section-cta {
   display: flex;
   flex-direction: column;
+  padding: 10%;
+  background-color: currentcolor;
   align-items: center;
-  gap: 33px;
 
 }
 
-#box2 {
-  background: blanchedalmond;
-  padding: 17px 31px;
-  border: 2px solid black;
+
+.title-mt-0 {
+  font-size: 32px;
+  color: white;
 }
+
+.subtitle {
+  color: aliceblue;
+}
+
+
+.no-decoration {
+  width: 280px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 19px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 18px;
+  border: none;
+  color: #616161;
+  text-align: center;
+  font-weight: 600;
+}
+/* Main body css  end*/
+
+/* footer  start*/
+.container5 {
+  color: #ccc;
+  padding: 30px 100px 20px 100px;
+  background-color: #1a1a1a;
+}
+
+.footer-box1 {
+  display: flex;
+  gap: 86px;
+}
+
+
+.footer-group-label {
+  color: #d7d3d3;
+  font-weight: bold;
+  font-size: .875rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.footer-ul a {
+  color: #bdbdbd;
+  font-size: .875rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+
+
+.footer-ul li {
+  list-style: none;
+  color: aliceblue;
+}
+
+
+.footer-ul a:hover {
+  color: #08b74f;
+}
+
+.footer-logo {
+  width: 73px;
+  height: 51px;
+
+}
+
+.footer-ul li a i {
+  font-size: 24px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+#foot-info {
+  line-height: 2;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-div p {
+  color: #bdbdbd;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.last-div p a {
+  color: #08b74f;
+}
+
+
+.footer-link a {
+  color: #616161;
+  text-decoration: none;
+}
+
+/* footer  end*/
+
+/* dropdown style start*/
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-left: 39px;
+  padding-top: 57px;
+}
+
+.dropdown a {
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ccc;
+}
+.dropdown #bar{
+  color: #08b74f;
+}
+.link {
+  color: white;
+}
+
+.dropdown a:hover {
+  color: #08b74f;
+  text-decoration: underline;
+}
+/* dropdown style end*/
+
+
+/* hamburger icon css */
+.logo-bar {
+  display: none;
+}
+
+
+#bar-button {
+  background: black;
+  padding: 11px;
+  border-radius: 10px;
+  border-color: #616161;
+}
+
+
+
+
+
+/* Responsive style start*/
+@media screen and (max-width: 986px) {
+  .logo-bar {
+    position: absolute;
+    right: 7%;
+    top: 10%;
+    display: block;
+  }
+
+  .img2 {
+    width: 218px;
+    padding-top: 100px;
+  }
+
+  #navbar {
+    display: none;
+    gap: 5px;
+  }
+
+  .logo-bar {
+    right: 7%;
+    top: 4%;
+  }
+
+  .box2 {
+    height: 75vh;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+i.fa-solid.fa-bars {
+  color: white;
+  font-size: 20px;
+}
+
+/* ****** */
+@media screen and (max-width: 346px) {
+  #year-div {
+    display: flex;
+    gap: 20px;
+  }
+
+  .logo-bar {
+    right: 7%;
+    top: 4%;
+  }
+
+  #foot-info {
+    line-height: 2;
+    padding-right: 198px;
+  }
+
+  .footer-box1 {
+    gap: 26px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .container2 {
+    padding: 30px 30px 10px 30px;
+  }
+
+}
+
+@media screen and (max-width: 504px) {
+  .recent-countainer1 {
+    display: flex;
+
+  }
+  .img1 {
+    padding-left: 19px;
+}
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .heading {
+    padding-top: 30px;
+  }
+}
+
+
+
+@media screen and (max-width: 753px) {
+  .recent-countainer1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 102px;
+  }
+
+  .recent-h3 {
+    padding-left: 80px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    color: #d7d3d3;
+  }
+
+}
+
+
+@media screen and (max-width: 1078px) {
+
+  .heading {
+    padding-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .img2 {
+    display: none;
+  }
+
+  .container4 {
+    padding: 55px;
+    text-align: center;
+  }
+
+}
+@media screen and (min-width: 980px){
+  .dropdown a{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img2 {
+    display: none;
+  }
+
+  .footer-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 211px;
+  }
+
+  .heading {
+    padding-left: 25px;
+
+  }
+
+  .head-2 {
+    padding-left: 10px;
+  }
+
+  .container2 {
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container5 {
+    color: #ccc;
+    padding: 30px 80px 20px 80px;
+    background-color: #1a1a1a;
+}
+
+}
+
+@media screen and (max-width: 408px) {
+  .img1 {
+    width: 100px;
+    height: 80px;
+    padding-left: 19px;
+    padding-top: 17px;
+  }
+
+  .heading {
+    padding-left: 25px;
+    padding-top: 40px;
+  }
+
+  .no-decoration {
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+
+  }
+
+  .recent-h3 {
+    padding-left: 2px;
+  }
+
+ 
+}
+
+
+@media screen and (max-width: 1200px) {
+  #navbar {
+    padding-left: 10px;
+  }
+
+
+
+  .container2 {
+    padding: 65px 54px 10px 54px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+/* Responsive style end*/
+
+
+/*Dropdown CSS for desktop start*/
+
+
+.events-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+#drop-events{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background: black;
+  color: aliceblue;
+  padding: 17px;
+  font-size: 12px;
+  border: 1px solid;
+  cursor: pointer;
+  width: 132px;
+}
+
+#drop-events li a{
+  padding-left: 5px;
+}
+
+#drop-about{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background: black;
+  color: aliceblue;
+  padding: 12px;
+  font-size: 12px;
+  border: 1px solid;
+  cursor: pointer;
+  width: 137px;
+}
+
+#drop-about li a{
+  padding-left: 5px;
+}
+/*Dropdown CSS for desktop end*/
+
+
+/* Dropdown CSS for Responsive Screen start*/
+#drop-newabout{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: aliceblue;
+  padding: 12px;
+  font-size: 12px;
+  border: 1px solid;
+  cursor: pointer;
+  width: 137px;
+}
+
+#drop-newevent{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: aliceblue;
+  padding: 17px;
+  font-size: 12px;
+  border: 1px solid;
+  cursor: pointer;
+  width: 132px;
+}
+/* Dropdown CSS for Responsive Screen end*/
