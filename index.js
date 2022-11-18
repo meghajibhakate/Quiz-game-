@@ -1,91 +1,104 @@
 
-/**
- * @desc Toggle dropdown menu
- */
-function eventsClick(){
-    var events=document.getElementById("drop-events")
+function inputHide() {
 
-    if (events.style.display == "none") {
-        events.style.display = "flex";
-    } else {
-        events.style.display = "none";
-    } 
-}
-
-
-/**
- * @desc Toggle dropdown menu
- */
-function aboutClick(){
-    var about=document.getElementById("drop-about")
-
-    if (about.style.display == "none") {
-        about.style.display = "flex";
-    } else {
-        about.style.display = "none";
-    } 
-}
-
-
-
-// Functions for Responsive Screen
-
-/**
- * @desc Toggle hamburger menu
- */
-function myFunction() {
-     // check drop style display is none
-     var hamburger=document.getElementById("drop")
-    if (hamburger.style.display == "none") {    //dropdown display none
-        hamburger.style.display = "flex";       //dropdown display flex 
-    }   
-    else {
-        hamburger.style.display = "none";
-    }
-}
-
-
-// create anFunction for Responsive Screen 
-/**
- * @desc Toggle dropdown menu
- */
-function eventClick(){
-    var event=document.getElementById("drop-newevent")
-    if (event.style.display == "none") {
-        event.style.display = "flex";
-    } else {
-        event.style.display = "none";
-    } 
-}
-
-
-
- /**
- * @desc Toggle dropdown menu
- */
-function newaboutClick(){
-    var newabout=document.getElementById("drop-newabout")
-    if (newabout.style.display == "none") {
-        newabout.style.display = "flex";
-    } else {
-        newabout.style.display = "none";
-    } 
+   document.getElementById("container").style.display = 'none'
+   document.getElementById("main-div").style.display = "flex"
+   let inputField = document.getElementById("myInput");
+   var welcomeName = document.getElementById("welcome-name")
+   welcomeName.innerHTML = "Welcome" + " " + inputField.value
+   console.log(welcomeName)
 }
 
 
 
 
+const quizDB = [
+   {
+      question: "What is capital of India?",
+      a: "gandhinagar",
+      b: "Surat",
+      c: "Delhi",
+      d: "mumbai",
+      correct: "c"
+
+   },
+   {
+      question: "What is the capital of Gujarat",
+      a: "surat",
+      b: "vadodara",
+      c: "gandhinagar",
+      d: "rajkot",
+      correct: "c"
+
+   }
+]
+
+
+const Quiz = document.getElementById('quiz')
+const answerElems = document.querySelectorAll('.answer')
+
+const questionel = document.getElementById('question')
+
+const option1 = document.getElementById('option1')
+const option2 = document.getElementById('option2')
+const option3 = document.getElementById('option3')
+const option4 = document.getElementById('option4')
+
+
+const submitBtn = document.getElementById('sumbit')
+
+let score = 0;
+let currentQuiz = 0;
+
+loadQuestions()
+function loadQuestions() {
+   notSelectedAns()
+
+   const questionList = quizDB[currentQuiz]
+   //    // console.log(quiz[queCount])
+   questionel.innerText = questionList.question
+
+   //    // for the option
+   option1.innerHTML = questionList.a
+   option2.innerHTML = questionList.b
+   option3.innerHTML = questionList.c
+   option4.innerHTML = questionList.d
+}
 
 
 
+function notSelectedAns() {
+   answerElems.forEach(answerElem => answerElem.checked = false)
+}
+
+function selectedAns() {
+   let answer
+   answerElems.forEach(answerElem => {
+      if(answerElem.checked){
+         answer = answerElem.id
+      }
+   })
+   console.log(answer)
+   return answer
+}
 
 
-// /**
-//  * @param {number} index - index of tasklist
-//  * description: 
-//  * @return {number} incrementing index
-//  */
-// function btnClick(index){
-//     console.log(index)
-//     return index++
-// }
+submitBtn.addEventListener('click', () => {
+   const answer = selectedAns();
+   if (answer) {
+      if (answer === quizDB[currentQuiz].correct) {
+         score++
+      }
+      currentQuiz++
+
+      if (currentQuiz < quizDB.length) {
+         loadQuestions()
+      }
+      else {
+         Quiz.innerHTML = `
+         <h2>you answerd ${score}/${quizDB.length}question correct</h2>
+         <button onclick="location.reload()">Reload</button>
+         `
+      }
+   }
+})
