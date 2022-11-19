@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background-color: rgb(225, 243, 250); */
   background-color: rgb(114 215 253);
   ;
 }
@@ -22,7 +21,6 @@ body {
   background: #fafafa;
   padding: 24px 100px;
   border-radius: 20px;
-  /* border: 2px solid black; */
   width: 50%;
 }
 
@@ -51,7 +49,7 @@ h2 {
 }
 
 #main-div {
-  display: none;
+  display: flex;
   justify-content: center;
 }
 
@@ -67,19 +65,22 @@ h3 {
   align-items: center;
   gap: 33px;
   background: azure;
-  width: 60%;
   height: 440px;
   border-radius: 20px;
 }
 
 #box2 {
-  background: #fafafa;
-  ;
-  padding: 17px 31px;
+  padding: 17px 201px;
   border-radius: 20px;
-  /* border: 2px solid black; */
+}
+#AnsOptions {
+  list-style: none;
+  display: flex;
+    gap: 20px;
 }
 
-ul li {
-  list-style: none;
+
+img{
+  height: 269px;
+    width: 284px;
 }
